@@ -7,6 +7,7 @@ COPY php.ini /etc/php/7.2/fpm/
 #Por la version de PHP soporta phalcon 3.4
 
 RUN composer --version \
+    && /etc/init.d/nginx restart \
     && composer global require phalcon/devtools:3.4 \
     && ln -s ~/composer/vendor/phalcon/devtools/phalcon.php /usr/bin/phalcon \
     && chmod ugo+x /usr/bin/phalcon
