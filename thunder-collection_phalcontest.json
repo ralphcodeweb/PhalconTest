@@ -1,0 +1,128 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "phalcontest",
+    "dateExported": "2021-12-07T16:37:31.645Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [{
+        "containerId": "",
+        "sortNum": 10000,
+        "headers": [{
+            "name": "Accept",
+            "value": "*/*"
+        }, {
+            "name": "User-Agent",
+            "value": "Thunder Client (https://www.thunderclient.io)"
+        }],
+        "colId": "ae54464e-3457-47e1-905c-d2a8596e27f7",
+        "name": "Listar",
+        "url": "{{domain}}/listar",
+        "method": "GET",
+        "modified": "2021-12-06T20:11:19.826Z",
+        "created": "2021-12-06T19:53:45.427Z",
+        "_id": "9dbbc863-6a1c-481b-8656-a29b0ae5b524",
+        "params": [],
+        "tests": []
+    }, {
+        "containerId": "",
+        "sortNum": 20000,
+        "headers": [{
+            "name": "Accept",
+            "value": "*/*"
+        }, {
+            "name": "User-Agent",
+            "value": "Thunder Client (https://www.thunderclient.io)"
+        }, {
+            "name": "Content-Type",
+            "value": "application/json"
+        }],
+        "colId": "ae54464e-3457-47e1-905c-d2a8596e27f7",
+        "name": "Guardar",
+        "url": "{{domain}}/insertar",
+        "method": "POST",
+        "modified": "2021-12-07T14:07:06.511Z",
+        "created": "2021-12-06T22:24:45.912Z",
+        "_id": "ea052eda-b406-4577-aada-5e160fd70330",
+        "params": [{
+            "name": "nombcomp",
+            "value": "Yohanan Martinez",
+            "isDisabled": true,
+            "isPath": false
+        }, {
+            "name": "cargo",
+            "value": "FullStack",
+            "isDisabled": true,
+            "isPath": false
+        }, {
+            "name": "depto",
+            "value": "Explotacion",
+            "isDisabled": true,
+            "isPath": false
+        }],
+        "body": {
+            "type": "json",
+            "raw": "{\n    \"nombreCompleto\":\"RAFA Martinez\",\n    \"cargo\":\"Programador\",\n    \"departamento\":\"Desarrollo\"\n}\n",
+            "form": []
+        },
+        "tests": []
+    }, {
+        "containerId": "",
+        "sortNum": 30000,
+        "headers": [{
+            "name": "Accept",
+            "value": "*/*"
+        }, {
+            "name": "User-Agent",
+            "value": "Thunder Client (https://www.thunderclient.io)"
+        }, {
+            "name": "Content-Type",
+            "value": "application/json"
+        }],
+        "colId": "ae54464e-3457-47e1-905c-d2a8596e27f7",
+        "name": "Actualizar",
+        "url": "{{domain}}/actualizar",
+        "method": "POST",
+        "modified": "2021-12-07T14:14:25.564Z",
+        "created": "2021-12-07T14:08:07.497Z",
+        "_id": "c2988900-6c37-4ba5-941f-f3848383f705",
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n    \"idEmpleado\": \"18\",\n    \"nombreCompleto\":\"Rafael David Martinez\",\n    \"cargo\":\"Programador\",\n    \"departamento\":\"Desarrollo\"\n}",
+            "form": []
+        },
+        "tests": []
+    }, {
+        "containerId": "",
+        "sortNum": 40000,
+        "headers": [{
+            "name": "Accept",
+            "value": "*/*"
+        }, {
+            "name": "User-Agent",
+            "value": "Thunder Client (https://www.thunderclient.io)"
+        }, {
+            "name": "Content-Type",
+            "value": "application/json"
+        }],
+        "colId": "ae54464e-3457-47e1-905c-d2a8596e27f7",
+        "name": "Eliminar",
+        "url": "{{domain}}/eliminar",
+        "method": "POST",
+        "modified": "2021-12-07T15:04:37.132Z",
+        "created": "2021-12-07T14:30:56.682Z",
+        "_id": "51f7919e-665b-4adf-982b-d824c05bdcfb",
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n    \"idEmpleado\": 5\n}",
+            "form": []
+        },
+        "tests": []
+    }],
+    "settings": {
+        "headers": [],
+        "tests": [],
+        "envId": "ba98a3db-1bf1-41c1-93db-cf4cedcb27e9"
+    }
+}
