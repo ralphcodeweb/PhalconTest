@@ -1,0 +1,46 @@
+<div class="container mt-5">
+    <div class="title text-center">
+        <h1 class="display-5">
+            <i class="fas fa-user-alt text-success"></i> <strong>Manejo de Empleados</strong>
+        </h1>
+    </div>
+    <div class="main row">
+        <div class="col-sm-12 col-md-3">
+            <form id="employee-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="idemp">NumEmpleado</label>
+                    <input type="text" id="idemp" class="form-control" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="nombcomp">Nombre Completo</label>
+                    <input type="text" id="nombcomp" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" id="cargo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="depto">Departamento</label>
+                    <input type="text" id="depto" class="form-control">
+                </div>
+                <!--      <input type="submit" value="Edit employee" class="btn btn-success btn-block edit-btn" disabled> -->
+                <input type="submit" value="Guardar" class="btn btn-success btn-block add-btn sumbit_btn">
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-9" style="height: 400px;overflow: scroll;">
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>ID Emp.</th>
+                        <th>Nombre Comp.</th>
+                        <th>Cargo</th>
+                        <th>Departamento</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
