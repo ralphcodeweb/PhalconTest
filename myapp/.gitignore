@@ -1,2 +1,3 @@
-app/vendor
-app/.DS_Store
+/app/vendor
+/app/.DS_Store
+.DS_Store
